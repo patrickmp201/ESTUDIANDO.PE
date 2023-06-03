@@ -3,7 +3,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
-                                <script></script> © 2023 Desarrollo Fortel  prueba  
+                                <script></script> © 2023 INGENERÍA DE SOFTWARE - GRUPO 6 
                                 <!-- <a href="#">Coderthemes</a>  -->
                             </div>
                             <!-- <div class="col-md-6">
