@@ -60,6 +60,8 @@ $route['recuperar'] = 'RecuperarClaveController';
 $route['principal'] = 'PaginaPrincipalController';
 $route['dificultad'] = 'ElegirDificultadController';
 $route['editar'] = 'EditarController';
+$route['nivel'] = 'EleccionNivelController';
+$route['logro'] = 'CompartirLogroController';
 
 
 //Profesor

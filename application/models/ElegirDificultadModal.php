@@ -11,6 +11,12 @@ class ElegirDificultadModal extends CI_Model {
     }
 
 
-
+    public function Elegir(){
+        $sql = "SELECT
+         * from Nivel;";
+        
+        $query = $this->db->query($sql, array());
+        return $query->result();
+    }
 
 }

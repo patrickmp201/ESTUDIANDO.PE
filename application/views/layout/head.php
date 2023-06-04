@@ -213,6 +213,11 @@ code {
                                     <i class="mdi mdi-contacts"></i> &nbsp
                                     <span>Contáctanos</span>
                                 </a>
+
+                                <a href="<?php echo base_url('logro') ?>" class="dropdown-item">
+                                    <i class="mdi mdi-contacts"></i> &nbsp
+                                    <span>Compartir logro</span>
+                                </a>
     
                 
 

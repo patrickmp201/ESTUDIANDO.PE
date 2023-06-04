@@ -19,8 +19,7 @@ $(document).ready(function() {
           html +=
             '<tr>' +
             '<td style="text-align: center;">' + data[i].IdCursoUsuario + '</td>' +
-            '<td style="text-align: center;">' + data[i].NombreCurso + '</td>' +
-            '<td style="text-align: center;">' + data[i].Correo + '</td>' +
+            '<td style="text-align: center;"><a href="dificultad">' + data[i].NombreCurso + '</a></td>' +
             '<td style="text-align: center;">' + data[i].Estado + '</td>' +
             '<td style="text-align: center;"><button type="button" data-toggle="tooltip" data-original-title="Eliminar" class="btn btn-sm waves-effect waves-light btn-danger" onclick="eliminar(' + data[i].IdCursoUsuario + ')"><i class="ti-trash" aria-hidden="true"></i></button></td>' +
             '</tr>';

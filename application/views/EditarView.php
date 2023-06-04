@@ -104,10 +104,10 @@
                             </div>
                             <!-- social-->
                             <div class="text-center mt-4">
-                                <p class="text-muted font-16">Sign in with</p>
+                                <p class="text-muted font-16">Compartir Logro</p>
                                 <ul class="social-list list-inline mt-3 mb-0">
                                     <li class="list-inline-item">
-                                        <a href="javascript: void(0);" class="social-list-item border-primary text-primary"><i class="fe-facebook"></i></a>
+                                        <a href="https://www.facebook.com/" class="social-list-item border-primary text-primary"><i class="fe-facebook"></i></a>
                                     </li>
                                     <li class="list-inline-item">
                                         <a href="javascript: void(0);" class="social-list-item border-danger text-danger"><i class="fe-mail"></i></a>

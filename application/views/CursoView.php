@@ -24,7 +24,6 @@
                                         <tr>
                                             <th style="text-align: center;">Id</th>
                                             <th style="text-align: center;">Curso</th>
-                                            <th style="text-align: center;">Correo</th>
                                             <th style="text-align: center;">Estado</th>
                                             <th style="text-align: center;">Acción</th>
                                         </tr>
