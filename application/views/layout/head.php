@@ -169,7 +169,8 @@ code {
                         </a>
                     </div> -->
 
-<!-- Servidesk -->
+<!-- Servidesk -->      
+                    
                     <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
                         <li>
                             <button class="button-menu-mobile waves-effect waves-light">
@@ -202,12 +203,12 @@ code {
                                     <i class="mdi mdi-archive-arrow-down"></i> &nbsp
                                     <span>Cursos</span>
                                 </a>
-                                <a href="<?php echo base_url('materialvideo') ?>" class="dropdown-item">
+                                <!-- <a href="<?php echo base_url('materialvideo') ?>" class="dropdown-item">
                                     <i class="mdi mdi-video"></i> &nbsp
                                     <span>Videos de Ayuda</span>
-                                </a>
+                                </a> -->
                                 <a href="<?php echo base_url('material') ?>" class="dropdown-item">
-                                    <i class="mdi mdi-help"></i> &nbsp
+                                    <i class="mdi mdi-video"></i> &nbsp
                                     <span>Material de Ayuda</span>
                                 </a>
                             
@@ -225,6 +226,32 @@ code {
                                     <span>Ranking</span>
                                 </a>
                 
+
+    
+                            </div>
+                        </li>
+                        <li class="dropdown d-none d-xl-block">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                Correo
+                                <i class="mdi mdi-chevron-down"></i> 
+                            </a>
+
+                            
+                            <div class="dropdown-menu">
+                               
+
+                    <!-- item-->
+                         <a href="<?php echo base_url('mensaje') ?>" class="dropdown-item">
+                                    <i class="mdi mdi-email-send"></i> &nbsp
+                                    <span>Enviar</span>
+                                </a>
+                                <a href="<?php echo base_url('recibir') ?>" class="dropdown-item">
+                                    <i class="mdi mdi-email-receive"></i> &nbsp
+                                    <span>Recibir</span>
+                                </a>
+
+                       
+                             
 
     
                             </div>

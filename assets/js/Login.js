@@ -9,13 +9,14 @@ function ValidarUsuario() {
     var DNI = $('#DNI').val();
     var password = $('#password').val();
     var IdRegistro = $('#IdRegistro').val();
+    var IdRol = $('#IdRol').val();
   
     if (DNI && password) {
       // console.log(Correo, password);
       $.ajax({
         url: 'LoginController/ValidarUsuario',
         type: 'GET',
-        data: { DNI: DNI, password: password, IdRegistro:IdRegistro },
+        data: { DNI: DNI, password: password, IdRegistro:IdRegistro, IdRol:IdRol },
         dataType: 'json',
         success: function (data) {
           if (data.error) {

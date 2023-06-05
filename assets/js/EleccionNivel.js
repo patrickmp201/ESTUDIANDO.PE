@@ -3,8 +3,8 @@ $(document).ready(function() {
   function Niveles() {
     // console.log('entra')
     // Obtener el valor del ID de usuario del elemento con id "txt_dni"
-    var curso = $('#IdCurso').text().trim();
-    var nivel = $('#IdNivel').text().trim();
+    var curso = $('#IdCurso').valv()
+    var nivel = $('#IdNivel').val();
   
 
     console.log(nivel);

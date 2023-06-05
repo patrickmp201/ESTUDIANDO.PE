@@ -16,8 +16,9 @@ class LoginController extends CI_Controller {
         $DNI = $this->input->get('DNI');
         $password = $this->input->get('password');
         $IdRegistro = $this->input->get('IdRegistro');
-        
-        $data = $this->login->ValidarUsuario($DNI, $password,$IdRegistro);
+        $IdRol = $this->input->get('IdRol');
+
+        $data = $this->login->ValidarUsuario($DNI, $password,$IdRegistro,$IdRol);
     
         if (empty($data)) {
             echo json_encode(['error' => 'No se encuentra registrado']);
