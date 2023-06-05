@@ -9,7 +9,7 @@
 
                             <div class="mb-12">
                                 <label class="form-label">Elegir Alumno</label>
-                                    <select class="form-control custom-select"   required name="IdRegistroAlum" id="IdRegistroAlum" value="" >
+                                    <select class="form-control custom-select"   required name="IdRegistroAlum" id="IdRegistroAlum" >
                                         <option value="">Seleccione</option>                                                
                                     <?php foreach ($alumno as  $alum) {?>
                                         <option value="<?php  echo $alum->IdRegistro ?>"><?php  echo $alum->NombreCompleto ?></option>                                                

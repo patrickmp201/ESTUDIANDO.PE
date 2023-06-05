@@ -43,7 +43,7 @@ class MensajeProfesorController extends CI_Controller {
 			
 
 			// 'IdLogro' => $this->input->post('IdLogro'),
-			'IdUsuarioDNI'  => $_COOKIE['cookie_user'],
+			'IdRegistroProf'  => $_COOKIE['cookie_user'],
 			'IdRegistroAlum' => $this->input->post('IdRegistroAlum'),
             'IdCurso' => $this->input->post('IdCurso'),
             'Asunto' => $this->input->post('Asunto'),

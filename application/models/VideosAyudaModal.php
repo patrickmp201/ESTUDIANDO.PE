@@ -18,7 +18,7 @@ class VideosAyudaModal extends CI_Model {
         $usuario = $_COOKIE["cookie_user"];
         $sql="INSERT INTO videosayuda (url,descripcion,fecha_registro,usuario_registro,tipo) 
               values ('$video','$descripcion','$this->fecha','$usuario','video')" ;      
-              var_dump($sql);  
+            //   var_dump($sql);  
         $query=$this->db->query($sql);
         return $this->db->insert_id();
     }
@@ -28,7 +28,8 @@ class VideosAyudaModal extends CI_Model {
         CASE tipo WHEN 'video' THEN SUBSTRING(url, 33, 11) ELSE url END AS url_id,
         DATE_FORMAT(fecha_registro, '%Y-%m-%d %H:%i:%s') AS fecha_subida, tipo,descripcion
     
-    FROM videosayuda;";
+    FROM videosayuda
+   ;";
         $query = $this->db->query($sql);
         //return $sql;
         return $query->result();

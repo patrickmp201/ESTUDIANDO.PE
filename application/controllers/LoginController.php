@@ -15,10 +15,10 @@ class LoginController extends CI_Controller {
     public function ValidarUsuario(){
         $DNI = $this->input->get('DNI');
         $password = $this->input->get('password');
-        $IdRegistro = $this->input->get('IdRegistro');
-        $IdRol = $this->input->get('IdRol');
+        // $IdRegistro = $this->input->get('IdRegistro');
+        // $IdRol = $this->input->get('IdRol');
 
-        $data = $this->login->ValidarUsuario($DNI, $password,$IdRegistro,$IdRol);
+        $data = $this->login->ValidarUsuario($DNI, $password);
     
         if (empty($data)) {
             echo json_encode(['error' => 'No se encuentra registrado']);

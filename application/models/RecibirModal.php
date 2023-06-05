@@ -12,10 +12,10 @@ class RecibirModal extends CI_Model {
 
 
     public function RecibirCorreoAlumno($idUsuario){
-        $sql = "		SELECT
+        $sql = "SELECT
 		c.IdCorreo,
-		c.IdUsuarioDNI as De,
-		r.NombreCompleto as Para,
+		c.IdRegistroProf as De,
+		re.NombreCompleto as Para,
 		c.Asunto,
 		c.Cuerpo,
 		u.NombreCurso
@@ -23,7 +23,8 @@ class RecibirModal extends CI_Model {
 	FROM
 		correo c
 
-		LEFT JOIN registro r ON r.IdRegistro = c.IdRegistroProf
+	
+		LEFT JOIN registro re ON re.IdRegistro = c.IdRegistroAlum
 		LEFT JOIN curso u ON u.IdCurso = c.IdCurso
 	WHERE
 		c.IdRegistroAlum= 1;";

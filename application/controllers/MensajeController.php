@@ -14,13 +14,13 @@ class MensajeController extends CI_Controller {
             'js' => "assets/js/dashboard.js"
         );
 
-        $this->load->view('layout/headprofesor');
+        $this->load->view('layout/head');
 
         $data['curso'] = $this->mensaje->VerCurso();
         $data['profesor'] = $this->mensaje->VerProfesor();
 
         $this->load->view('MensajeView', $data);
-        $this->load->view('layout/footerprofesor', $data);
+        $this->load->view('layout/footer', $data);
     }
 
     public function VerCurso(){
