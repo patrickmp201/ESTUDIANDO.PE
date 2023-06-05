@@ -57,6 +57,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css" />
+        
 
         <!-- Head js -->
         <script src="<?= base_url(); ?>assets/js/head.js"></script>
@@ -201,24 +202,28 @@ code {
                                     <i class="mdi mdi-archive-arrow-down"></i> &nbsp
                                     <span>Cursos</span>
                                 </a>
+                                <a href="<?php echo base_url('materialvideo') ?>" class="dropdown-item">
+                                    <i class="mdi mdi-video"></i> &nbsp
+                                    <span>Videos de Ayuda</span>
+                                </a>
                                 <a href="<?php echo base_url('material') ?>" class="dropdown-item">
-                                    <i class="fe-help-circle"></i> &nbsp
+                                    <i class="mdi mdi-help"></i> &nbsp
                                     <span>Material de Ayuda</span>
                                 </a>
-                                <a href="<?php echo base_url('rankings') ?>" class="dropdown-item">
-                                    <i class="mdi mdi-archive-arrow-down"></i> &nbsp
-                                    <span>Ranking</span>
-                                </a>
+                            
                                 <a href="<?php echo base_url('contact') ?>" class="dropdown-item">
                                     <i class="mdi mdi-contacts"></i> &nbsp
                                     <span>Contáctanos</span>
                                 </a>
 
                                 <a href="<?php echo base_url('logro') ?>" class="dropdown-item">
-                                    <i class="mdi mdi-contacts"></i> &nbsp
+                                    <i class="mdi mdi-medal"></i> &nbsp
                                     <span>Compartir logro</span>
                                 </a>
-    
+                                <a href="<?php echo base_url('rankings') ?>" class="dropdown-item">
+                                    <i class="mdi mdi-archive-arrow-down"></i> &nbsp
+                                    <span>Ranking</span>
+                                </a>
                 
 
     

@@ -201,17 +201,21 @@ code {
                                     <i class="mdi mdi-archive-arrow-down"></i> &nbsp
                                     <span>Cursos</span>
                                 </a>
-                                <a href="<?php echo base_url('material') ?>" class="dropdown-item">
-                                    <i class="fe-help-circle"></i> &nbsp
-                                    <span>Material de Ayuda</span>
+                                <a href="<?php echo base_url('materialvideo') ?>" class="dropdown-item">
+                                    <i class="mdi mdi-video"></i> &nbsp
+                                    <span>Videos de Ayuda</span>
                                 </a>
+                                <a href="<?php echo base_url('material') ?>" class="dropdown-item">
+                                    <i class="mdi mdi-help"></i> &nbsp
+                                    <span>Material Ayuda</span>
+                                </a>
+                
                            
                                 <a href="<?php echo base_url('contact') ?>" class="dropdown-item">
                                     <i class="mdi mdi-contacts"></i> &nbsp
                                     <span>Contáctanos</span>
                                 </a>
-    
-                
+                       
 
     
                             </div>

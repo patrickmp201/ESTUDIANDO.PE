@@ -24,7 +24,9 @@ class RegistroProfesorController extends CI_Controller {
             'Password' => $this->input->post('Password'),
             'Celular' => $this->input->post('Celular'),
             'DNI' => $this->input->post('DNI'),
-            'FechaNacimiento' => $this->input->post('FechaNacimiento')
+            'FechaNacimiento' => $this->input->post('FechaNacimiento'),
+            'IdRol' => 2
+
 
             
        

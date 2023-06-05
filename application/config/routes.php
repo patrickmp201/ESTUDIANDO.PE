@@ -59,7 +59,7 @@ $route['curso'] = 'CursoController';
 $route['recuperar'] = 'RecuperarClaveController';
 $route['principal'] = 'PaginaPrincipalController';
 $route['dificultad'] = 'ElegirDificultadController';
-$route['editar'] = 'EditarController';
+$route['perfil'] = 'EditarController';
 $route['nivel'] = 'EleccionNivelController';
 $route['logro'] = 'CompartirLogroController';
 
@@ -70,6 +70,7 @@ $route['registroprofesor'] = 'RegistroProfesorController';
 $route['principalprofesor'] = 'PaginaPrincipalProfesorController';
 $route['editarprofesor'] = 'EditarProfesorController';
 $route['cursoprofesor'] = 'CursoProfesorController';
+$route['materialvideo'] = 'VideosAyudaController';
 $route['material'] = 'MaterialAyudaController';
 
 

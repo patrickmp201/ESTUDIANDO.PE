@@ -28,7 +28,9 @@ class RegistroController extends CI_Controller {
             'DNI' => $this->input->post('DNI'),
             'IdColegioProcedencia' => $this->input->post('IdColegioProcedencia'),
             'FechaNacimiento' => $this->input->post('FechaNacimiento'),
-            'IdGrado' => $this->input->post('IdGrado')
+            'IdGrado' => $this->input->post('IdGrado'),
+            'IdRol' => 1
+
 
             
        
