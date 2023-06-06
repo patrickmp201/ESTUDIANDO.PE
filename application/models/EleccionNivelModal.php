@@ -27,6 +27,39 @@ class EleccionNivelModal extends CI_Model {
         $query=$this->db->query($sql);
         return $query->result();
     }
+
+    public function LlamadoAlternativa(){ 
+        $sql = "SELECT * FROM alternativas;";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
+    
+    public function ValidarChecklist($IdActividad){ 
+        $sql = "SELECT * FROM resolucion WHERE IdActividad = '".$IdActividad."';";
+        $query = $this->db->query($sql);
+        return $query->result();
+
+
+    }
+    
+    public function checklist_componente($IdActividad){
+        $sql = "SELECT 
+        r.IdResolucion, a.NombreActividad, al.Opciones
+        FROM resolucion r
+        LEFT JOIN Actividad a ON a.IdActividad = r.IdActividad
+        LEFT JOIN Alternativas al ON al.IdAlternativa = r.IdAlternativa  
+        WHERE r.IdActividad = '".$IdActividad."'";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
+    
+    
+
+    public function guardarChecklistComponente($data){
+        $this->db->insert('respuestaalumno', $data);
+        return $this->db->insert_id();
+    }
+
 }
 
         // where n.Nivel  = '".$nivel."' and c.NombreCurso = '".$curso."'  ";

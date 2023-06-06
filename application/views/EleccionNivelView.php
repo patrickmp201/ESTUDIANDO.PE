@@ -52,51 +52,32 @@
         </div>
     </div>
 
-    <div id="agregar-curso-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Modal Content is Responsive</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <form class="form-horizontal form-material" action=""  id="form-agregar-curso">
-                                
-                                <div class="modal-body p-4">
-                                    
+</div>
+                 
 
-                                    <div class="row">
-                                            <div class="mb-12">
-                                            <label class="form-label">Elegir Curso</label>
-                                                <select class="form-control custom-select"   required name="IdCurso" id="IdCurso" >
-                                                    <option value="">Seleccione</option>                                                
-                                                <?php foreach ($curso as  $cur) {?>
-                                                    <option value="<?php  echo $cur->IdCurso ?>"><?php  echo $cur->NombreCurso ?></option>                                                
-                                                <?php } ?>
-                                            </select>
-                                        </div>
-                                    </div>
-                                                </br>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="mb-3">
-                                                <label class="form-label">Estado</label>
-                                                <select class="form-control custom-select" name="Estado" id="Estado" >
-                                                    <option value="1">Activo</option>
-                                                    <option value="0">Inactivo</option>
-                                                </select>   
-                                            </div>
-                                        </div>
-                                    </div>
-                                                
-                                            <button type="submit" class="btn btn-info waves-effect"  data-dismiss="modal">Guardar</button>
-                                            
-                                            <button type="button" class="btn btn-secondary waves-effect" data-bs-dismiss="modal">Cancelar</button>
-                                </div>
-                                <input type="hidden" value="" name="txt_usuario" id="txt_usuario"/>
 
-                            </form>
-
-                                         </div> 
-                    </div>
-                    </div>
+        <div id="checklist-close-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Content is Responsive</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="modal-body p-4" id="form-checklist">
+                <input type="hidden" value="" name="IdResolucion" id="IdResolucion" />
+                <div class="mb-3">
+                <label class="control-label mb-3">Seleccionar respuesta</label>
+                <div class="row">
+                    <div class="col-md-6" id="alternativas-container"></div>
+                </div>
+                </div>
+                <div class="modal-footer">
+                <button type="submit" class="btn btn-info">Guardar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <input type="hidden" value="" name="txt_usuario" id="txt_usuario" />
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>
 
