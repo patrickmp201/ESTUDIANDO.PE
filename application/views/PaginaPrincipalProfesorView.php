@@ -17,7 +17,7 @@
         }
 
         #section1 {
-            background-image: url("assets/images/estudiando_wallpaper.jpg");
+            background-image: url("assets/images/profehd.jpg");
         }
 
         #section2 {
@@ -40,7 +40,7 @@
     <div id="section1" class="section" style="height: 600px;">
         <div class="content">
             <h1 class="display-1">Una página pensada en estudiantes</h1>
-            <h1 class="display-1">Supera tus límites repasando con nosotros</h1>
+            <h1 class="display-1">Apoya las habilidades de los alumnos en un solo lugar</h1>
             <br><br>
             <div class="button-list">
                 <a href="cursoprofesor">
@@ -50,7 +50,7 @@
                 </a>
                 <a href="alumnos">
                     <button type="button" class="btn btn-dark waves-effect waves-light">
-                        <i class="mdi mdi-heart me-1"></i> Ranking de Alumnos
+                        <i class="mdi mdi-heart me-1"></i> Material de Ayuda
                     </button>
                 </a>
             </div>
@@ -63,9 +63,7 @@
             <div id="section2" class="section">
                 <div class="content">
                     <span><h5 class="display-5" style="text-align: justify;color:orange;">Comienza resolviendo tareas de todos los cursos para fortalecer el aprendizaje fuera del colegio!</h5></span>
-                    <p class="card-text " style="text-align: justify;color:black;font-size:20px;">Sé que a veces puede ser difícil encontrar la motivación para estudiar y mantenerse enfocado, pero quiero recordarles que cada uno de ustedes tiene un potencial increíble. Con la página web Estudiando.pe, tienen la oportunidad de acceder a una gran cantidad de recursos y herramientas para ayudarles en su camino educativo.
-                        Recuerden que cada día es una nueva oportunidad para aprender algo nuevo y acercarse un paso más a sus metas. No se desanimen por los obstáculos que puedan encontrar en el camino, en lugar de eso, conviértanlos en oportunidades para crecer y mejorar.
-                        ¡Están en el camino correcto para alcanzar sus sueños! Mantengan una actitud positiva, trabajen duro y utilicen las herramientas disponibles en Estudiando.pe para lograr el éxito que se merecen. ¡Ustedes pueden hacerlo!</p>
+                    <p class="card-text " style="text-align: justify;color:black;font-size:20px;">Estimados profesores, recuerden que cada día es una nueva oportunidad para aprender y acercarse a nuestras metas. A través de Estudiando.pe, tienen acceso a una amplia gama de recursos y herramientas para ayudar en su camino educativo. No se desanimen por los obstáculos, conviértanlos en oportunidades de crecimiento. Mantengan una actitud positiva y utilicen las herramientas disponibles para lograr el éxito. Juntos, podemos inspirar a nuestros alumnos a alcanzar nuevas alturas. ¡Estamos en el camino correcto para hacer la diferencia!</p>
                 </div>
             </div>
         </div>
@@ -89,7 +87,13 @@
                                         <div class="card text-white bg-primary mb-3" style="height: 620px;">
                                             <div class="card-header bg-primary"><h1 style="Display-1">METODOLOGÍAS</h1></div>
                                             <div class="card-body">
-                                                <p class="card-text" style="text-align: justify;font-size:20px;">Para resolver tareas fácilmente, existen varias metodologías que puedes utilizar. Una de ellas es la técnica Pomodoro, que consiste en dividir la tarea en bloques de 25 minutos, separados por descansos de 5 minutos. Otra opción es la técnica Eisenhower, que clasifica las tareas según su urgencia e importancia para priorizarlas. También puedes utilizar la técnica de los 5 porqués, que consiste en preguntarse cinco veces el porqué de la tarea para encontrar su causa raíz y solucionarla eficazmente. Además, es importante mantener un ambiente de trabajo organizado y evitar distracciones para aumentar la productividad.</p>
+                                                <p class="card-text" style="text-align: justify;font-size:20px;">Para resolver tareas fácilmente, existen 
+                                                varias metodologías que puedes utilizar. Una de ellas es la técnica Pomodoro, 
+                                                que consiste en dividir la tarea en bloques de 25 minutos, separados por descansos de 5 minutos. 
+                                                Otra opción es la técnica Eisenhower, que clasifica las tareas según su urgencia e importancia para 
+                                                priorizarlas. También puedes utilizar la técnica de los 5 porqués, que consiste en preguntarse cinco 
+                                                veces el porqué de la tarea para encontrar su causa raíz y solucionarla eficazmente. Además, es importante 
+                                                mantener un ambiente de trabajo organizado y evitar distracciones para aumentar la productividad.</p>
                                             </div>
                                         </div>
                                     </div>
