@@ -2,7 +2,7 @@
 
 
         <!-- PARA CARGAR LOS LOGROS  -->
-        <h1 style="text-align: center; font-weight: bold; font-style: italic;">COMPARTIR LOGRO</h1>
+        <h1 style="text-align: center; font-weight: bold; font-style: italic;">!BIENVENIDO, COMPARTE TU LOGRO!</h1>
 
 
             <div class="tab-pane show p-3" id="guardarlogro">
