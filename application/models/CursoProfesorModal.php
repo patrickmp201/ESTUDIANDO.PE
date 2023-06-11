@@ -96,5 +96,24 @@ class CursoProfesorModal extends CI_Model {
         return $query->result();
     }
 
+    
+    public function VerCalificaciones()
+    { 
+        $sql = "SELECT 
+                    ra.IdRespuestaAlumno,
+                    a.NombreActividad,
+                    a.Enunciado,
+                    ra.IdUsuarioDNI,
+                    al.Opciones as RespuestaSeleccionada
+                FROM respuestaalumno ra
+                LEFT JOIN actividad a ON a.IdActividad = ra.IdActividad
+                LEFT JOIN resolucion o ON o.IdResolucion = ra.RespuestaSeleccionada
+                LEFT JOIN alternativas al ON al.IdAlternativa = o.IdAlternativa";
+    
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
+    
+
 
 }

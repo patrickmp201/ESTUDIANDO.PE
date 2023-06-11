@@ -1,4 +1,3 @@
-<script src="<?php echo base_url() ?>assets/js/CursoProfesor.js"></script>        
 
 <div class="content-page" style="padding: 0px;">
 
@@ -18,7 +17,10 @@
                                         <div class="col-x-3">
                                             <button id="agregaractivo" onclick="agregar_Actividad()" class="btn btn-warning d-none d-lg-block m-l-15 mx-2"><i class="fa fa-plus-circle"></i>&nbspCrear Actividad</button>
                                         </div>
-                                    </div>
+                                        <div class="col-x-3">
+                                            <button id="agregaractivo" onclick="Ver_Calificaciones()" class="btn btn-blue waves-effect waves-light m-l-15 mx-2">&nbspVer Calificaciones</button>
+                                        </div>
+                            </div>
                             <h4 class="header-title" style="text-align: center;font-size:50px">CURSOS</h4>
                             <br>
                             <div class="table-responsive">
@@ -220,3 +222,41 @@
                         </div><!-- /.modal-content -->
                     </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
+
+
+            
+<div id="DocumentoModal" class="modal fade custom-modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" style="text-align: center;">ACTIVOS DEL USUARIO</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-title-wrapper"></div>
+                <div class="table-responsive" style="overflow-x: clip;">
+                    <div class="table-wrapper">
+                        <table id="TablaparaPopUpDocumento" class="fixed-table-loading table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th style="text-align: center;">Id</th>
+                                    <th style="text-align: center;">Nombre Actividad</th>
+                                    <th style="text-align: center;">Enunciado</th>
+                                    <th style="text-align: center;">Respuesta Seleccionada</th>
+                                    <th style="text-align: center;">Estudiante</th>
+
+                                </tr>
+                            </thead>
+                            <tbody id="listarDetalleDocumento"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="<?php echo base_url() ?>assets/js/CursoProfesor.js"></script>        

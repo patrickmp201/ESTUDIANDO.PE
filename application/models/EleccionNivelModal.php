@@ -34,13 +34,13 @@ class EleccionNivelModal extends CI_Model {
         return $query->result();
     }
     
-    public function ValidarChecklist($IdActividad){ 
-        $sql = "SELECT * FROM resolucion WHERE IdActividad = '".$IdActividad."';";
-        $query = $this->db->query($sql);
-        return $query->result();
+    // public function ValidarChecklist($IdActividad){ 
+    //     $sql = "SELECT * FROM resolucion WHERE IdActividad = '".$IdActividad."';";
+    //     $query = $this->db->query($sql);
+    //     return $query->result();
 
 
-    }
+    // }
     
     public function checklist_componente($IdActividad){
         $sql = "SELECT 
@@ -48,7 +48,7 @@ class EleccionNivelModal extends CI_Model {
         FROM resolucion r
         LEFT JOIN Actividad a ON a.IdActividad = r.IdActividad
         LEFT JOIN Alternativas al ON al.IdAlternativa = r.IdAlternativa  
-        WHERE r.IdActividad = '".$IdActividad."'";
+        WHERE a.IdActividad = '".$IdActividad."'";
         $query = $this->db->query($sql);
         return $query->result();
     }
@@ -57,6 +57,7 @@ class EleccionNivelModal extends CI_Model {
 
     public function guardarChecklistComponente($data){
         $this->db->insert('respuestaalumno', $data);
+        
         return $this->db->insert_id();
     }
 

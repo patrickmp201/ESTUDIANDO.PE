@@ -1,9 +1,7 @@
 $(document).ready(function() {
     // Función para obtener el valor del ID de usuario y realizar la solicitud AJAX
     function Cursoinscritos() {
-      // Obtener el valor del ID de usuario del elemento con id "txt_dni"
-    //   var idUsuario = $('#txt_usuario').text().trim();
-    //   console.log(idUsuario);
+ 
   
       $.ajax({
         type: 'POST',
@@ -257,6 +255,53 @@ function agregar_curso(){
         });
       } else {
         Swal.fire("Cancelado", "El registro está a salvo! :)", "error");
+      }
+    });
+  }
+  function Ver_Calificaciones() {
+    $('#DocumentoModal').modal('show');
+    $('.modal-title').text('Calificaciones');
+    Calificaciones(); // Llamar a la función "Calificaciones()"
+  }
+  
+  function Calificaciones() {
+    if ($.fn.dataTable.isDataTable("#TablaparaPopUpDocumento")) {
+      $("#TablaparaPopUpDocumento").DataTable().destroy();
+    }
+  
+    $.ajax({
+      type: "POST",
+      url: 'CursoProfesorController/Calificaciones/',
+      dataType: "JSON",
+      success: function (data) {
+        let html = '';
+  
+        for (let i = 0; i < data.length; i++) {
+          html += '<tr>' +
+            '<td style="text-align: center;">' + data[i].IdRespuestaAlumno + '</td>' +
+            '<td style="text-align: center;">' + data[i].NombreActividad + '</td>' +
+            '<td style="text-align: center;">' + data[i].Enunciado + '</td>' +
+            '<td style="text-align: center;">' + data[i].RespuestaSeleccionada + '</td>' +
+            '<td style="text-align: center;">' + data[i].IdUsuarioDNI + '</td>' +
+            '</tr>';
+        }
+  
+        $('#listarDetalleDocumento').html(html);
+  
+        $("#TablaparaPopUpDocumento").DataTable({
+          language: {
+            paginate: {
+              previous: "<i class='mdi mdi-chevron-left'></i>",
+              next: "<i class='mdi mdi-chevron-right'></i>"
+            }
+          },
+          drawCallback: function () {
+            $(".dataTables_paginate > .pagination").addClass("pagination-rounded");
+          }
+        });
+      },
+      error: function (xhr, status, error) {
+        console.log(xhr.responseText);
       }
     });
   }

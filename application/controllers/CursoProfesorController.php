@@ -104,4 +104,11 @@ class CursoProfesorController extends CI_Controller {
 
 	}
 
+	public function Calificaciones()
+	{
+		$data = $this->curso->VerCalificaciones();
+		echo json_encode($data);
+	}
+	
+
 }
