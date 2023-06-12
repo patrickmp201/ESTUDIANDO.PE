@@ -47,7 +47,7 @@
 
                                 <form id="form-validar-profesor">
                                 <div class="mb-3">
-                                    <label for="emailaddress" class="form-label">Documento de Identidad</label>
+                                    <label for="emailaddress" class="form-label">DNI</label>
                                     <input class="form-control" type="text" id="DNI" name="DNI" required="" placeholder="Ingresar su DNI">
                                 </div>
                                 <div class="mb-3">
