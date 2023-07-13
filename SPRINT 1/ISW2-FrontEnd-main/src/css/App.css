@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  background-image: url(/src/imagenes/login1.webp);
+  color: white;
+  background-attachment: fixed;
+  background-repeat: none;
+  background-size: cover;
+  
+}
+.App {
+  text-align:center;
+  padding-left: 20px;
+  float: left;
+  display:flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.auth-form-container, .login-form, .register-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-form-container{
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 5rem;
+}
+
+input{
+  margin: 0.3rem 0;
+  padding: 0.30rem 0;
+  border:none ;
+  border-radius: 2px;
+}
+
+button{
+  border: none;
+  background-color: goldenrod;
+  padding: 8px;
+  margin: 0.2rem 0;
+  border-radius: 11px;
+  cursor: pointer;
+
+}
+
+.link-btn{
+  background: none;
+  color: white;
+  text-decoration: underline;
+
+}
