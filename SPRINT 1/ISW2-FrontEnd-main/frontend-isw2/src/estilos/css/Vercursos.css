@@ -1,0 +1,98 @@
+
+section {
+    padding-top: 20px;
+    padding-bottom: 120px;
+    
+  
+}
+
+
+.con{
+    text-align: center;
+    font-size: 20px;
+    display:grid;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+/* registro */
+
+
+/* menu */
+
+#menu .nav-pills .nav-link {
+    background-color: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+#menu .nav-pills .nav-link.active {
+    background-color: #F58d17;
+    color: #ffffff;
+} 
+
+.menu-item .stars {
+    color: #F58d17;
+}
+
+.menu-item a:hover{
+    color: #F58d17;
+    
+}
+
+.menu-item p{
+    color: black;
+}
+
+
+/* Btn */
+.btn {
+    border-radius: 0;
+    padding: 14px 38px;
+}
+
+.btn-brand {
+    color: #fff;
+    font-weight: 500;
+    border-color: #F58d17;
+    background-color: #F58d17;
+}
+
+.btn-brand:hover {
+    border-color: #d37810;
+    background-color: #d37810;
+    color: #fff;
+}
+
+
+.platos-carnes img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.platos-carnes a {
+    color: white;
+
+}
+.platos-carnes a:hover{
+    color: #F58d17;
+}
+
+.platos-carnes p{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .platos-carnes {
+        flex-direction: column;
+    }
+    .platos-carnes img {
+        width: 100%;
+    }
+}
+
+
