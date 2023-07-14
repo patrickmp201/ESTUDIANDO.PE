@@ -11,7 +11,6 @@ class MaterialAyudaController extends CI_Controller {
 
 
     }
-
     public function index() {
         $data = array(
             'title' => "Principal",
@@ -23,13 +22,12 @@ class MaterialAyudaController extends CI_Controller {
         $this->load->view('layout/footerprofesor', $data);
     }
 
-
-    public function MostarVideoImagen(){
-        // var_dump(123);
-        
+    public function MostarVideoImagen() {   
         $data = $this->MaterialAyudaModal->MostarFotoyVideo();
-		echo json_encode($data);
+        echo json_encode($data);
     }
+
+
     public function BorrarCurso($IdMaterialAyuda){
 		// var_dump($idUsuario);
         $this->MaterialAyudaModal->BorrarCurso($IdMaterialAyuda);              

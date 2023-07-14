@@ -2,15 +2,14 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class MaterialAyudaModal extends CI_Model {
+    public $fecha;
 
-    
-    function __construct()
-    {
+    function __construct() {
         parent::__construct();
         $this->load->database();
-        $this->fecha = date("Y-m-d H:i:s");
-
     }
+
+
 
 
     public function guardarImagenes($image_urls,$descripcion){    
