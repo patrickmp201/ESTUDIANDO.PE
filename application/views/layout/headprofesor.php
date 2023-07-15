@@ -15,6 +15,7 @@
         <link rel="shortcut icon" href="<?= base_url(); ?>assets/images/favicon.ico">
      
        
+ 
 
         <!--nuevos-->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -30,8 +31,6 @@
         <link href="<?= base_url(); ?>assets/libs/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" type="text/css" />
         <link href="<?= base_url(); ?>assets/libs/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css" rel="stylesheet" type="text/css" />
 
-
-        
 
 
         <!-- plugin css -->
@@ -50,17 +49,17 @@
         <link href="<?= base_url(); ?>assets/css/app.min.css" rel="stylesheet" type="text/css"/>
         <!-- icons -->
         <link href="<?= base_url(); ?>assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="<?= base_url(); ?>assets/sweetalert/sweetalert.css" rel="stylesheet" type="text/css" />
+        <!-- <link href="<?= base_url(); ?>assets/sweetalert/sweetalert.css" rel="stylesheet" type="text/css" /> -->
         <!-- <link href="<?= base_url(); ?>assets/css/style.min.css" rel="stylesheet" type="text/css" /> -->
 
 
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css" />
+        
 
         <!-- Head js -->
         <script src="<?= base_url(); ?>assets/js/head.js"></script>
-
         
 
     </head>
@@ -201,16 +200,16 @@ code {
                                     <i class="mdi mdi-archive-arrow-down"></i> &nbsp
                                     <span>Cursos</span>
                                 </a>
-                                <!-- <a href="<?php echo base_url('materialvideo') ?>" class="dropdown-item">
-                                    <i class="mdi mdi-video"></i> &nbsp
-                                    <span>Videos de Ayuda</span>
-                                </a> -->
+            
                                 <a href="<?php echo base_url('material') ?>" class="dropdown-item">
                                     <i class="mdi mdi-video"></i> &nbsp
                                     <span>Material Ayuda</span>
                                 </a>
                 
-                           
+                                <a href="<?php echo base_url('dashboard') ?>" class="dropdown-item">
+                                    <i class="mdi mdi-contacts"></i> &nbsp
+                                    <span>Dashboard</span>
+                                </a>
                                 <a href="<?php echo base_url('contact') ?>" class="dropdown-item">
                                     <i class="mdi mdi-contacts"></i> &nbsp
                                     <span>Contáctanos</span>

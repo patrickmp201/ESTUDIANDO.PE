@@ -80,7 +80,7 @@
                                 <div class="row-6" style="text-align: center;">
                                     <a href="loginprofesor" class="text-muted"><small>PROFESOR</small></a>
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="recuperar" class="text-muted"><small>ADMINISTRADOR</small></a>
+                                    <a href="loginadministrador" class="text-muted"><small>ADMINISTRADOR</small></a>
                                 </div>
                             </form>
 

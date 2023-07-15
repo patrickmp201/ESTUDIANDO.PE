@@ -12,10 +12,10 @@ class CursoController extends CI_Controller {
         
 
 
-        $data = array(
-			'title' => "Principal",
-			'js' => "assets/js/dashboard.js"
-		);
+        // $data = array(
+		// 	'title' => "Principal",
+		// 	'js' => "assets/js/dashboard.js"
+		// );
 		
 		$this->load->view('layout/head');
 

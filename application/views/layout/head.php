@@ -50,7 +50,7 @@
         <link href="<?= base_url(); ?>assets/css/app.min.css" rel="stylesheet" type="text/css"/>
         <!-- icons -->
         <link href="<?= base_url(); ?>assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="<?= base_url(); ?>assets/sweetalert/sweetalert.css" rel="stylesheet" type="text/css" />
+        <!-- <link href="<?= base_url(); ?>assets/sweetalert/sweetalert.css" rel="stylesheet" type="text/css" /> -->
         <!-- <link href="<?= base_url(); ?>assets/css/style.min.css" rel="stylesheet" type="text/css" /> -->
 
 
@@ -134,7 +134,7 @@ code {
                             </div>
 
                                     <!-- item-->
-                                <a href="editar" class="btn_account dropdown-item notify-item">
+                                <a href="perfil" class="btn_account dropdown-item notify-item">
                                     <i class="fe-user"></i>
                                     <span>My Account</span>
                                 </a>

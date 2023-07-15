@@ -48,8 +48,8 @@
         <script src="<?= base_url()?>assets/js/app.min.js"></script>      
 
         <!-- Sweet-Alert  -->
-        <script src="<?php echo base_url() ?>assets/sweetalert/sweetalert.min.js"></script>
-        <script src="<?php echo base_url() ?>assets/sweetalert/jquery.sweet-alert.custom.js"></script>
+        <!-- <script src="<?php echo base_url() ?>assets/sweetalert/sweetalert.min.js"></script>
+        <script src="<?php echo base_url() ?>assets/sweetalert/jquery.sweet-alert.custom.js"></script> -->
                
 
         <script src="<?= base_url()?>assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
@@ -59,12 +59,12 @@
         <script src="<?= base_url()?>assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
         <script src="<?= base_url()?>assets/libs/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
         <script src="<?= base_url()?>assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
-        <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.colVis.min.js"></script>
+        <!-- <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.colVis.min.js"></script> -->
 
-        <script src="../metadata/js/bootbox.min.js?id=10"></script>
+        <!-- <script src="../metadata/js/bootbox.min.js?id=10"></script>
 
         <script src="<?= base_url()?>assets/js/sesion.js"></script>   
-        
+         -->
 
 
         <!-- CUSTOM -->

@@ -77,6 +77,13 @@ $route['material'] = 'MaterialAyudaController';
 $route['mensajeprofesor'] = 'MensajeProfesorController';
 $route['recibirprofesor'] = 'RecibirProfesorController';
 
+//Administrador
+
+$route['loginadministrador'] = 'LoginAdministradorController';
+$route['principaladministrador'] = 'PaginaPrincipalAdministradorController';
+$route['dashboard'] = 'DashboardController';
+
+$route['test'] = 'TestController';
 
 
 
